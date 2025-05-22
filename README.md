@@ -7,122 +7,86 @@ index.html
   <title>ReMedi – Your Health, Our Priority</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
+      background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+      color: #333; line-height: 1.6;
     }
     header {
-      background-color: #00796b;
-      color: white;
-      padding: 2em 1em;
-      text-align: center;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      background: #004d40; color: #fff; padding: 2rem;
+      text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
     nav {
-      text-align: center;
-      margin-top: 1em;
+      background: #00695c; padding: 1rem; text-align: center;
     }
     nav a {
-      margin: 0 1em;
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
+      color: #fff; text-decoration: none; margin: 0 1rem;
+      font-weight: 600; transition: color 0.3s;
     }
-    nav a:hover {
-      text-decoration: underline;
-    }
+    nav a:hover { color: #b2dfdb; }
     section {
-      max-width: 960px;
-      margin: auto;
-      padding: 2em;
-      background-color: white;
-      margin-top: 2em;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      max-width: 1000px; margin: 2rem auto; background: #fff;
+      border-radius: 12px; padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
-    h2 {
-      color: #00796b;
-    }
-    ul {
-      padding-left: 1.2em;
-    }
-    .services li::marker {
-      color: #00796b;
+    h2 { color: #00796b; margin-bottom: 1rem; }
+    ul li { margin-bottom: 0.5rem; }
+    .highlight-box {
+      background: #e0f2f1; padding: 1.5rem;
+      border-left: 6px solid #00796b;
+      border-radius: 8px; margin-top: 1rem;
     }
     footer {
-      background-color: #004d40;
-      color: white;
-      text-align: center;
-      padding: 1.5em 1em;
-      margin-top: 3em;
+      background: #004d40; color: white; text-align: center;
+      padding: 2rem 1rem; margin-top: 3rem;
     }
-    .contact-info {
-      font-size: 0.95em;
-      margin-top: 1em;
-      background: #e0f2f1;
-      padding: 1em;
-      border-radius: 8px;
+    .button {
+      display: inline-block; margin-top: 1.5rem; background: #00796b;
+      color: white; padding: 0.75rem 1.5rem; text-decoration: none;
+      border-radius: 8px; font-weight: bold; transition: background 0.3s ease;
     }
-    .cta {
-      text-align: center;
-      margin-top: 2em;
-    }
-    .cta a {
-      background-color: #00796b;
-      color: white;
-      padding: 0.75em 1.5em;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: background 0.3s;
-    }
-    .cta a:hover {
-      background-color: #005a4f;
-    }
+    .button:hover { background: #004d40; }
   </style>
 </head>
 <body>
   <header>
     <h1>ReMedi</h1>
     <p>Your Health, Our Priority</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
   </header>
-
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
   <section id="about">
     <h2>About Us</h2>
-    <p>ReMedi is a trusted provider of pharmaceutical products and services in the UK. Our mission is to ensure access to quality medicines and expert advice. We prioritize patient care, trust, and quality in everything we do.</p>
+    <p>ReMedi is your trusted provider of pharmaceutical products and expert health advice in the UK. We are committed to making high-quality medications accessible, with care and precision.</p>
+    <div class="highlight-box">
+      <strong>Mission:</strong> Deliver quality, affordability, and trust in every product and service we offer.
+    </div>
   </section>
-
   <section id="services">
     <h2>Our Services</h2>
-    <ul class="services">
-      <li>Prescription and over-the-counter medications</li>
-      <li>Pharmacist consultations</li>
-      <li>Online orders and home delivery</li>
-      <li>Blood pressure and glucose checks</li>
+    <ul>
+      <li>✓ Prescription & over-the-counter medications</li>
+      <li>✓ Online orders & home delivery</li>
+      <li>✓ Blood pressure & glucose testing</li>
+      <li>✓ Private consultations with pharmacists</li>
     </ul>
+    <a class="button" href="#contact">Contact Us</a>
   </section>
-
   <section id="contact">
-    <h2>Contact Us</h2>
-    <div class="contact-info">
+    <h2>Contact Information</h2>
+    <p class="highlight-box">
       📍 6 Bank Street, High Street, TW1 1RR<br>
-      📞 074 654 65 543<br>
-      🕒 Mon–Fri: 9:00–17:00 | Weekends: 10:00–15:00
-    </div>
-    <div class="cta">
-      <a href="mailto:info@remedi-health.co.uk">Get in Touch</a>
-    </div>
+      📞 Phone: 074 654 65 543<br>
+      🕒 Hours: Mon–Fri: 9:00–17:00 | Weekends: 10:00–15:00<br>
+      ✉️ Email: info@remedi-health.co.uk
+    </p>
   </section>
-
   <footer>
-    &copy; 2025 ReMedi. All rights reserved.
+    &copy; 2025 ReMedi – All rights reserved.
   </footer>
 </body>
 </html>
